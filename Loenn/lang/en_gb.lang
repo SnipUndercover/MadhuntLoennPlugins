@@ -1,0 +1,15 @@
+# entities
+entities.Madhunt/ArenaOption.placements.name.normal=Arena Option
+entities.Madhunt/C3OshiroSecret.placements.name.normal=Chapter 3 Oshiro Secret
+entities.Madhunt/HiderSpawnPoint.placements.name.normal=Hider Spawn Point
+entities.Madhunt/HiderWinHeart.placements.name.normal=Hider Win Heart
+entities.Madhunt/SeekerSpawnPoint.placements.name.normal=Seeker Spawn Point
+entities.Madhunt/StartSwitch.placements.name.up=Start Switch (Up)
+entities.Madhunt/StartSwitch.placements.name.right=Start Switch (Right)
+entities.Madhunt/StartSwitch.placements.name.down=Start Switch (Down)
+entities.Madhunt/StartSwitch.placements.name.left=Start Switch (Left)
+entities.Madhunt/TransitionBooster.placements.name.normal=Transition Booster
+entities.Madhunt/TransitionBoosterTarget.placements.name.normal=Transition Booster Target
+
+# triggers
+triggers.Madhunt/StartZone.placements.name.normal=Start Zone
