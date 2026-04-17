@@ -1,5 +1,5 @@
 - Name: MadhuntLoennPlugins
-  Version: 1.1.0
+  Version: 1.2.0
   Dependencies:
   - Name: Madhunt
     Version: 2.4.5
