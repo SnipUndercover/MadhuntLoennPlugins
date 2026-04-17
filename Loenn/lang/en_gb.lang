@@ -1,23 +1,23 @@
 # entities
 entities.Madhunt/ArenaOption.placements.name.normal=Arena Option
 entities.Madhunt/ArenaOption.attributes.description.switchIDs=A comma-separated list of switch IDs assigned to this arena.\n\nIf more than one arena is assigned to one switch,\npressing it will pick a random arena to start.
-entities.Madhunt/ArenaOption.attributes.description.arenaArea=The SID of the arena map. (optional)\n\nThe SID of the map is its path relative to the Maps/ folder,\nexcluding order and side markers. For example, if my map is in\n"Maps/SnipUndercover/MadhuntMaps/1-LazureLake.bin",\nits SID is "SnipUndercover/MadhuntMaps/LazureLake".\n\nIf empty, defaults to the current map's SID.\n\nNOTE: Madhunt lets you specify the side of the arena map\nby putting a hash and the side at the end of the SID\n(like "SnipUndercover/MadhuntMaps/LazureLake#B"),\nbut this is bugged since 2.4.5 and does not work.
+entities.Madhunt/ArenaOption.attributes.description.arenaArea=The SID of the arena map. (optional)\n\nThe SID of the map is its path relative to the Maps/ folder,\nexcluding order and side markers. For example, if my map is in\n"Maps/SnipUndercover/MadhuntMaps/1-LazureLake.bin",\nits SID is "SnipUndercover/MadhuntMaps/LazureLake".\n\nIf empty, defaults to the current map's SID.\n\nNOTE: Madhunt lets you specify the side of the arena map\nby putting a hash and the side at the end of the SID\n(like "SnipUndercover/MadhuntMaps/LazureLake#B"),\nbut this is bugged and does not work.
 entities.Madhunt/ArenaOption.attributes.description.spawnLevel=The name of the arena room.
-entities.Madhunt/ArenaOption.attributes.description.spawnIndex=The spawn index Hiders and Seekers should use when teleporting.\n\nIf positive, this spawn index is used directly.\nIf negative, each player picks a random index between\n0 (inclusive) and the given value (exclusive).
-entities.Madhunt/ArenaOption.attributes.description.initialSeekers=How many seekers should the game be started with.
-entities.Madhunt/ArenaOption.attributes.description.tagMode=TODO
-entities.Madhunt/ArenaOption.attributes.description.goldenMode=TODO
-entities.Madhunt/ArenaOption.attributes.description.hideNames=TODO
+entities.Madhunt/ArenaOption.attributes.description.spawnIndex=The spawn index that players should teleport to when the round starts.\n\nIf negative, each player picks a random index between 0 (inclusive)\nand the given value (exclusive).
+entities.Madhunt/ArenaOption.attributes.description.initialSeekers=The number of Seekers should the round be started with.\n\nIf negative, determines the number of Hiders instead.
+entities.Madhunt/ArenaOption.attributes.description.tagMode=Whether the arena should play "Tag".\n\nIn this mode, Hiders hide from and avoid Seekers.\nWhen a Hider collides with a Seeker, they die and turn into a Seeker.\nThe round ends when there are no more hiders left.\n\nThe last Hider standing is considered the winner.\nThe winner is allowed to enter dream blocks in the lobby.
+entities.Madhunt/ArenaOption.attributes.description.goldenMode=Whether any death should turn a Hider into a Seeker.
+entities.Madhunt/ArenaOption.attributes.description.hideNames=Whether to hide CelesteNet usernames in a round.
 
 entities.Madhunt/C3OshiroSecret.placements.name.normal=Chapter 3 Oshiro Secret
 
 entities.Madhunt/HiderSpawnPoint.placements.name.normal=Hider Spawn Point
-entities.Madhunt/HiderSpawnPoint.attributes.description.spawnIndex=The spawn index.\n\nSee the description in "Arena Option" for more information.
+entities.Madhunt/HiderSpawnPoint.attributes.description.spawnIndex=The spawn index.\n\nWhen the round starts, the Arena Option entity determines the\nspawn index players should teleport to.
 
 entities.Madhunt/HiderWinHeart.placements.name.normal=Hider Win Heart
 
 entities.Madhunt/SeekerSpawnPoint.placements.name.normal=Seeker Spawn Point
-entities.Madhunt/SeekerSpawnPoint.attributes.description.spawnIndex=The spawn index.\n\nSee the description in "Arena Option" for more information.
+entities.Madhunt/SeekerSpawnPoint.attributes.description.spawnIndex=The spawn index.\n\nWhen the round starts, the Arena Option entity determines the\nspawn index players should teleport to.
 
 entities.Madhunt/StartSwitch.placements.name.up=Start Switch (Up)
 entities.Madhunt/StartSwitch.placements.name.right=Start Switch (Right)
@@ -29,7 +29,7 @@ entities.Madhunt/StartSwitch.attributes.description.name=The dialog ID to displa
 
 entities.Madhunt/TransitionBooster.placements.name.normal=Transition Booster
 entities.Madhunt/TransitionBooster.attributes.description.targetDir=The direction the booster should go towards.
-entities.Madhunt/TransitionBooster.attributes.description.targetArea=The SID of the map the player should be teleported to.\n\nThe SID of the map is its path relative to the Maps/ folder,\nexcluding order and side markers. For example, if my map is in\n"Maps/SnipUndercover/MadhuntMaps/1-LazureLake.bin",\nits SID is "SnipUndercover/MadhuntMaps/LazureLake".\n\nIf empty, defaults to the current map's SID.\n\nNOTE: Madhunt lets you specify the side of the target map\nby putting a hash and the side at the end of the SID\n(like "SnipUndercover/MadhuntMaps/LazureLake#B"),\nbut this is bugged since 2.4.5 and does not work.
+entities.Madhunt/TransitionBooster.attributes.description.targetArea=The SID of the map the player should be teleported to.\n\nThe SID of the map is its path relative to the Maps/ folder,\nexcluding order and side markers. For example, if my map is in\n"Maps/SnipUndercover/MadhuntMaps/1-LazureLake.bin",\nits SID is "SnipUndercover/MadhuntMaps/LazureLake".\n\nIf empty, defaults to the current map's SID.\n\nNOTE: Madhunt lets you specify the side of the target map\nby putting a hash and the side at the end of the SID\n(like "SnipUndercover/MadhuntMaps/LazureLake#B"),\nbut this is bugged and does not work.
 entities.Madhunt/TransitionBooster.attributes.description.targetLevel=The name of the room the player should be teleported to.
 entities.Madhunt/TransitionBooster.attributes.description.targetID=The ID of a Transition Booster Target that the player should arrive from.
 
